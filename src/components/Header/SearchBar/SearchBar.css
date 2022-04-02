@@ -8,6 +8,7 @@
     overflow: hidden;
     overflow-x: auto;
     border-radius: 10px;
+    position: fixed;
 }
 .dataResult_Hide{
     display: flex;
