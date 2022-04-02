@@ -18,7 +18,7 @@ export const Signup = () => {
        </div>
      
      <h2>Login/Signup</h2>  
-     <p1>Get a personalized experience, and access all <br/> your music</p1>
+     <p1>Get a personalized experience, and access all <br/><p>your music</p></p1>
     
      <form id="field">
 
