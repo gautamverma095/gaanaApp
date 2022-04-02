@@ -7,7 +7,7 @@ export const Oldsongs=()=>{
    
 var data=useSelector(store=>store.songs)  
  var arr=data.filter((elem)=>{return elem.type=="old"})
-     console.log("data",data)
+    
     return(
         <div>
                 <div className="img_container"><img src="https://cdn.bdc-tv.com/wp-content/uploads/2020/08/p3.jpg"  /></div>

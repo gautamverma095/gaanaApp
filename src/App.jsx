@@ -24,7 +24,7 @@ function App() {
     <Header/>
     <Navbar/>
     <Routes>
-    <Route path='/' element={<DemoHome/>}/> 
+    
     <Route path='/play/:id' element={<PlaySong/>}/> 
      <Route path='/' element={<Home/>}/> 
       <Route path='/Trending' element={ <Trending/>} />
