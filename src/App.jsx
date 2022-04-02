@@ -11,7 +11,7 @@ function App() {
     <Routes>
     <Route path='/' element={<DemoHome/>}/> 
     <Route path='/play/:id' element={<PlaySong/>}/> 
-    </Routes>      
+    </Routes>     
     <Footer/>
     </div>
   );
