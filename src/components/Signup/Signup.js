@@ -3,6 +3,13 @@ import "./Signup.css"
 // import GitHubIcon from '@mui/icons-material/GitHub';
  
 export const Signup = () => {
+  const google = () => {
+    window.open("https://marriott-bonvoy.herokuapp.com/auth/google", "_self");
+  };
+    const  cont =() =>{
+      window.open("https://marriott-bonvoy.herokuapp.com/auth/google", "_self")
+    }
+  
   return (
     <div className='container'>
      <div className='left'>
@@ -16,7 +23,7 @@ export const Signup = () => {
      <form id="field">
 
      <input id="email" type="text" placeholder="Enter Email or Mobile number"/>
-    <button>Continue</button>
+    <button onClick={cont}>Continue</button>
 
     <p className="or">Or continue with</p>
     {/* <input type="submit"/> */}
@@ -29,7 +36,7 @@ export const Signup = () => {
     <button>   Git Hub</button>
     </div>
     <div className='btnbox2'> 
-    <button> Google</button>
+    <button className="loginButton google" onClick={google}> Google</button>
     </div>
     </div>
      </div>
