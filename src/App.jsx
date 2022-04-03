@@ -80,7 +80,11 @@ function App() {
     <Header/>
     <Navbar/>
     <Routes>
+<<<<<<< Updated upstream
     <Route path='/Signin' element={<Signin/>}/>
+=======
+
+>>>>>>> Stashed changes
     <Route path='/Signup' element={<Signup/>}/>
     <Route path='/play/:id' element={<PlaySong/>}/> 
      <Route path='/' element={<Home/>}/> 

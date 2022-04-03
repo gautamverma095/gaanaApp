@@ -5,6 +5,10 @@ import './header.css';
 import { SearchBar } from './SearchBar/SearchBar';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 export const Header = () => {  
   const Navigate= useNavigate();
   const [sidebar , setSidebar] = useState(false) ;
