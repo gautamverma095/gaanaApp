@@ -88,7 +88,8 @@ p1{
    background-color:rgb(249,249,249) ;
     height: 60px;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 2%;
+    padding: 1px;
   }
   .box>div{
     /* border: 1px solid red; */
@@ -141,4 +142,8 @@ p1{
 .left{
     /* border: 1px solid blue; */
     width:400px;
+    margin-left: 3%;
+}
+#male{
+  font-size: 17px;
 }

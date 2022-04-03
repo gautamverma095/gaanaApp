@@ -42,7 +42,7 @@ setData({...data,[id]:value})
        <label> 
            <div className='circle'>  
        <input type="radio" onChange={onChange} />
-     <span>Male</span>  
+     <span id='male'>Male</span>  
    
  
     <input type="radio" onChange={onChange}/>
