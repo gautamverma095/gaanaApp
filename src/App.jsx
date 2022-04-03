@@ -4,7 +4,6 @@ import { Footer } from './components/Footer/footer';
 import { Header } from './components/Header/header';
 import { Route, Routes } from 'react-router-dom';
 import { PlaySong } from './components/PlaySong/PlaySong';
-import { DemoHome } from './components/demoHome';
 import logo from './logo.svg';
 import './App.css';
 import { Navbar } from './components/Navbar/Navbar';

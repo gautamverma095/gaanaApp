@@ -71,7 +71,7 @@
 
   .audio_container{
     width: 90%;
-     border: 2px solid red; 
+     /* border: 2px solid red;  */
     height: 390px;
     margin: auto;
     margin-top: 25px;
@@ -99,7 +99,7 @@
   }
  
   .audio_container12>p{
-    border: 1px solid red;
+    /* border: 1px solid red; */
       height: 50px;
       border-radius: 5px;  
       display:flex;
@@ -117,7 +117,7 @@
 
   .play{
     margin-top: 7%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
    margin-left: -20px;
    border-radius: 5px; 
   }
