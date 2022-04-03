@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { Movable } from "../Movable/Movable";
+import { type } from "@testing-library/user-event/dist/type";
 
 
 

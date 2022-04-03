@@ -1,10 +1,10 @@
 import { BiUserCircle } from 'react-icons/bi';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './header.css';
 import { SearchBar } from './SearchBar/SearchBar';
-import { Navigate, useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 export const Header = () => {  
   const Navigate= useNavigate();
   const [sidebar , setSidebar] = useState(false) ;
@@ -16,7 +16,8 @@ export const Header = () => {
         <div className="header flex-div">   
             <div className="nav-left flex-div">
                 <img src="https://cdn0.iconfinder.com/data/icons/heroicons-ui/24/icon-menu-512.png" className="menuIcon menu-bars" onClick={showSidebar}/>
-                <img src="https://dog55574plkkx.cloudfront.net/storelogo/web/gaana.png" className="gaanaIcon"/>
+                <img src="https://e7.pngegg.com/pngimages/15/349/png-clipart-india-gaana-logo-streaming-media-milestone-s-india-text-trademark.png" className="FirstgaanaIcon"/>
+                <img src="https://cdn-web.heartfulness.org/en/wp-content/uploads/2020/09/gana-ipd-logo.png" className="gaanaIcon"/>
             </div>
 
             <div className="nav-middle flex-div">  
@@ -40,10 +41,10 @@ export const Header = () => {
             <li className='navbar-toggle nav-text'>
             <BiUserCircle size={26}/> <span>Login/Sign Up</span> <AiOutlineCloseCircle size={26} onClick={showSidebar}/> 
             </li>
-            <li className='nav-text'style={{color: "red"}}>Home</li>
-            <li className='nav-text'>Radio</li>
-            <li className='nav-text'>Podcast</li>
-            <li className='nav-text'>My Music</li>
+            <Link to="/"><li className='nav-text'style={{color: "red"}}>Home</li></Link>
+            <Link to="/radio"><li className='nav-text'>Radio</li></Link>
+            <Link to="/podcast"><li className='nav-text'>Podcast</li></Link>
+            <Link to="/Trending"><li className='nav-text'>My Music</li></Link>
             <li className='nav-text'>India's Music</li>
             <li className='nav-text'>Language</li>
           <hr/>
@@ -52,10 +53,10 @@ export const Header = () => {
             <li className='nav-text'>Get Gaana Plus</li>
           <hr/>
             <li className='nav-text nav-text-heading'>Go Premium</li>
-            <li className='nav-text'>Trending Songs</li>
-            <li className='nav-text'>New Songs</li>
-            <li className='nav-text'>Old Songs</li>
-            <li className='nav-text'>Albums</li>
+            <Link to="/Trending"><li className='nav-text'>Trending Songs</li></Link>
+            <Link to="/new"><li className='nav-text'>New Songs</li></Link>
+            <Link to="/old"><li className='nav-text'>Old Songs</li></Link>
+            <Link to="/album"><li className='nav-text'>Albums</li></Link>
          </ul>
         </nav>
            
