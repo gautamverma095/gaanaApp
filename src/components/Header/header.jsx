@@ -3,10 +3,14 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { useEffect, useState } from 'react';
 import './header.css';
 import { SearchBar } from './SearchBar/SearchBar';
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
+=======
+import { Navigate, useNavigate } from 'react-router-dom';
+>>>>>>> 15c5ee533abcb85223070a7ef28d10baa7df9b15
 
 export const Header = () => {  
-
+  const Navigate= useNavigate();
   const [sidebar , setSidebar] = useState(false) ;
   const showSidebar = () => setSidebar(!sidebar) ;
   
@@ -30,7 +34,8 @@ export const Header = () => {
 
             <div className='nav-right flex-div'>
               <img src='https://w7.pngwing.com/pngs/147/905/png-transparent-white-outline-of-the-moon-white-text-monochrome-thumbnail.png' className='theme'/>
-              <p className='font'>Log/Sign Up</p>
+              {/* <p className='font'>Log/Sign Up</p> */}
+              <p onClick={()=>{Navigate("/Signup")}} className='font'>Log/Sign Up</p>
             </div>         
         </div>
          
