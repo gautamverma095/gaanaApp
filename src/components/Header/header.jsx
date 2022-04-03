@@ -5,10 +5,7 @@ import './header.css';
 import { SearchBar } from './SearchBar/SearchBar';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
+import Theme from '../Context/Theme';
 export const Header = () => {  
   const Navigate= useNavigate();
   const [sidebar , setSidebar] = useState(false) ;
@@ -33,8 +30,11 @@ export const Header = () => {
             </div>
 
             <div className='nav-right flex-div'>
-              <img src='https://w7.pngwing.com/pngs/147/905/png-transparent-white-outline-of-the-moon-white-text-monochrome-thumbnail.png' className='theme'/>
-              {/* <p className='font'>Log/Sign Up</p> */}
+              
+               <img src='https://w7.pngwing.com/pngs/147/905/png-transparent-white-outline-of-the-moon-white-text-monochrome-thumbnail.png' className='theme'/>
+              {/* <p className='font'>Log/Sign Up</p> */} 
+            {/* <Theme/> */}
+
               <p onClick={()=>{Navigate("/Signup")}} className='font'>Log/Sign Up</p>
             </div>         
         </div>

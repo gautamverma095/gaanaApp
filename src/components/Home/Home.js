@@ -60,7 +60,7 @@ function SampleNextArrow(props) {
 return (
    <div className="slider_continer">
       
-    <div>
+    <div id  = "side">
       <Movable/>
     </div>
 
