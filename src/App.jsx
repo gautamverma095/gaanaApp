@@ -18,6 +18,7 @@ import { Albumsongsaudio } from './components/Album/Albumaudio';
 import { Radio } from './components/Radio/Radio';
 import { Podcast } from './components/Podcast/Podcast';
 import {Signup} from "./components/Signup/Signup.js"
+import {Signin} from "./components/Signin/Signin.js"
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
     <Navbar/>
     <Routes>
     <Route path='/Signup' element={<Signup/>}/>
-    <Route path='/' element={<DemoHome/>}/> 
+    <Route path='/Signin' element={<Signin/>}/>
     <Route path='/play/:id' element={<PlaySong/>}/> 
      <Route path='/' element={<Home/>}/> 
       <Route path='/Trending' element={ <Trending/>} />
