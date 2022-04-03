@@ -115,6 +115,7 @@
     top: 0;
     left: -100%;
     transition: 850ms;
+    margin-left: 1%;
 }
 
 .nav-menu.active{
@@ -155,4 +156,8 @@ li:hover{
 }
 .nav-right:hover{
   cursor: pointer;
+}
+
+#log{
+  font-size: 10px;
 }

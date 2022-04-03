@@ -43,7 +43,7 @@ export const Header = () => {
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items'>
             <li className='navbar-toggle nav-text'>
-            <BiUserCircle size={26}/> <span>Login/Sign Up</span> <AiOutlineCloseCircle size={26} onClick={showSidebar}/> 
+            <BiUserCircle size={26}/> <span id='log' >Login/Sign Up</span> <AiOutlineCloseCircle size={26} onClick={showSidebar}/> 
             </li>
             <Link to="/"><li className='nav-text'style={{color: "red"}}>Home</li></Link>
             <Link to="/radio"><li className='nav-text'>Radio</li></Link>
