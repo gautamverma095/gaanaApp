@@ -17,7 +17,7 @@ import { type } from "@testing-library/user-event/dist/type";
 export const Home=()=>{
     const dispatch=useDispatch()   
      useEffect(()=>{
-          fetch("https://gaana-apiss.herokuapp.com/songs").then(Response=>Response.json()).then(data=>dispatch({type:"songs",payload:data.songs}))
+          fetch("https://again-gaana.herokuapp.com/songs").then(Response=>Response.json()).then(data=>dispatch({type:"songs",payload:data.songs}))
      },[])
    
 

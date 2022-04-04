@@ -7,8 +7,8 @@ p{
 .mainBox{
     background-color: hsl(240, 11%, 98%);
     /* position: fixed; */
-    width: 100%;
     bottom: 10px;
+
 }
 .heading{
     font-size: 32px;
@@ -37,6 +37,8 @@ p{
 .midDiv{
     display: flex;
     justify-content: center;
+
+
 }
 li{
     display: flex;
